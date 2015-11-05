@@ -1,4 +1,4 @@
-<nav class="top-bar" data-topbar role="navigation">
+<nav class="top-bar nav-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
       <h1><a href="#"><%= image_tag("logo.png", class: "logo") %></a></h1>
@@ -18,10 +18,10 @@
 <div class="image">
   <img data-interchange="[<%= image_path('background_photo.png') %>, (default)], [<%= image_path('background_photo_large.png', class: "background_photo_large") %>, (large)]">
   <div class="slogan">Crafting drillbits with percision</div>
-  <div class="email-sub small-12 small-centered large-8 columns">
+  <div class="email-sub small-12 small-centered large-10 large-centered columns">
     <div class="row collapse">
       <div class="small-8 large-offset-4 large-6 columns">
-        <input class="email-input" type="text" autofocus=false placeholder="Subscribe with email to hear from us...">
+        <input class="email-input" type="text" autofocus=false placeholder="Enter email to hear from us...">
       </div>
       <div class="small-4 large-2 columns">
         <a href="#" class="button postfix">Subscribe</a>
@@ -31,23 +31,69 @@
 </div>
 
 <div class="product-explanation">
-  <h1 class="product-explanation_header">Why we're great</h1>
-  <div class="product-explanation_list">
-    <div class="product-explanation_list_item">Easily penetrates material drilled</div>
-    <div class="product-explanation_list_item">Easily penetrates material drilled</div>
-    <div class="product-explanation_list_item">Easily penetrates material drilled</div>
+  <div class="product-explanation_header">Things that make our product great</div>
+  <div class="row">
+    <div class="product-explanation_summary small-12 small-centered large-12 large-centered columns">
+      Gekkou bits drill into material with ease without the need for a pilot hole or center punch, 
+      even in larger diameter holes which in turn saves time and eliminates a step
+    </div>
   </div>
+
+<div class="row feature-list-row small-collapse large-collapse">
+  <div class="feature-list-column large-4 columns">
+    <ul class="feature-list-container">
+      <li class="feature-list-items">Easily penetrates material drilled</li>
+      <li class="feature-list-items">Does not wobble in the initial stages of the cut</li>
+      <li class="feature-list-items">Metal shavings produced is cool to touch</li>
+      <li class="feature-list-items">Less heat is transferred to the work material</li>
+    </ul>
+  </div>
+  <div class="feature-list-column large-4 columns">
+    <ul class="feature-list-container">
+      <li class="feature-list-items">Easily penetrates material drilled</li>
+      <li class="feature-list-items">Does not wobble in the initial stages of the cut</li>
+      <li class="feature-list-items">Metal shavings produced is cool to touch</li>
+      <li class="feature-list-items">Less heat is transferred to the work material</li>
+    </ul>
+  </div>
+  <div class="feature-list-column large-4 columns">
+    <ul class="feature-list-container">
+      <li class="feature-list-items">Easily penetrates material drilled</li>
+      <li class="feature-list-items">Does not wobble in the initial stages of the cut</li>
+      <li class="feature-list-items">Metal shavings produced is cool to touch</li>
+      <li class="feature-list-items">Less heat is transferred to the work material</li>
+    </ul>
+  </div>
+</div>
   <%= link_to "PDF", { controller: "welcome", action: "open_pdf" }, target: "_blank" %>
 </div>
-
-<div class="row">
-  <div class="small-4 large-4 columns">
-  <h1>Social</h1>
+<section class="footer-section-container">
+  <div class="row">
+    <div class="footer-section large-4 columns">
+      <div class="footer-header">Social Media</div>
+      <div class="footer-items">
+        <ul class="footer-items-container">
+          <li class="footer-items"><%= image_tag("facebook_icon.png", class: "footer-icons") %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-section large-4 columns">
+      <div class="footer-header">Contact Us</div>
+      <div class="footer-items">
+        <ul class="footer-items-container">
+          <li class="footer-items"><%= mail_to "vitaliy@bictool.com", image_tag("mail_icon.png", class: "footer-icons") %></li>
+          <li class="footer-items"><%= mail_to "vitaliy@bictool.com", "vitaliy@bictool.com" %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-section large-4 columns">
+      <div class="footer-header">More Info</div>
+      <div class="footer-items">
+        <ul class="footer-items-container">
+          <li class="footer-items"><%= link_to "PDF", { controller: "welcome", action: "open_pdf" }, target: "_blank" %></li>
+          <li class="footer-items"><%= link_to "PDF", { controller: "welcome", action: "open_pdf" }, target: "_blank" %></li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="small-4 large-4 columns">
-  <h1>Contact</h1>
-  </div>
-  <div class="small-4 large-4 columns">
-  <h1>Docs</h1>
-  </div>
-</div>
+</section>
