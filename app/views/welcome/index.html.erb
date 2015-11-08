@@ -63,17 +63,18 @@
       <li class="feature-list-items">Metal shavings produced is cool to touch</li>
       <li class="feature-list-items">Less heat is transferred to the work material</li>
     </ul>
-  </div>
+   </div>
+ </div>
 </div>
-  <%= link_to "PDF", { controller: "welcome", action: "open_pdf" }, target: "_blank" %>
-</div>
+
 <section class="footer-section-container">
-  <div class="row">
+  <div class="row footer-row">
     <div class="footer-section large-4 columns">
       <div class="footer-header">Social Media</div>
       <div class="footer-items">
         <ul class="footer-items-container">
-          <li class="footer-items"><%= image_tag("facebook_icon.png", class: "footer-icons") %></li>
+          <li class="footer-li-items"><%= link_to image_tag("facebook_icon.png", class: "facebook-icons footer-icons"), "https://www.facebook.com/GekkouUSA" %><a class="footer-links" href="https://www.facebook.com/GekkouUSA">GekkouUSA</a></li>
+          <li class="footer-li-items"><%= link_to image_tag("facebook_icon.png", class: "facebook-icons footer-icons"), "https://www.facebook.com/Bic-Tool-634639836657945/" %><a class="footer-links" href="https://www.facebook.com/Bic-Tool-634639836657945/">BicToolCo</a></li>
         </ul>
       </div>
     </div>
@@ -81,8 +82,8 @@
       <div class="footer-header">Contact Us</div>
       <div class="footer-items">
         <ul class="footer-items-container">
-          <li class="footer-items"><%= mail_to "vitaliy@bictool.com", image_tag("mail_icon.png", class: "footer-icons") %></li>
-          <li class="footer-items"><%= mail_to "vitaliy@bictool.com", "vitaliy@bictool.com" %></li>
+          <li class="footer-li-items"><%= mail_to "vitaliy@bictool.com", image_tag("mail_icon.png", class: "footer-icons") %></li>
+          <li class="footer-li-items"><%= mail_to "vitaliy@bictool.com", "vitaliy@bictool.com", class: "footer-links" %></li>
         </ul>
       </div>
     </div>
@@ -90,8 +91,8 @@
       <div class="footer-header">More Info</div>
       <div class="footer-items">
         <ul class="footer-items-container">
-          <li class="footer-items"><%= link_to "PDF", { controller: "welcome", action: "open_pdf" }, target: "_blank" %></li>
-          <li class="footer-items"><%= link_to "PDF", { controller: "welcome", action: "open_pdf" }, target: "_blank" %></li>
+          <li class="footer-li-items"><%= link_to image_tag("documents_icon.png", class: "footer-icons"), { controller: "welcome", action: "open_pdf" }, target: "_blank" %></li>
+          <li class="footer-li-items"><%= link_to "Customer Comments", { controller: "welcome", action: "open_pdf" }, target: "_blank", class: "footer-links" %></li>
         </ul>
       </div>
     </div>
