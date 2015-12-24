@@ -52,3 +52,5 @@ end
 
 # Foundation
 gem 'foundation-rails'
+
+gem 'inline_svg'

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "welcome#temp_site"
+  root "welcome#index"
   get 'distributors' => 'distributors#index'
   get "openpdf" => "welcome#open_pdf"
   # The priority is based upon order of creation: first created -> highest priority.
