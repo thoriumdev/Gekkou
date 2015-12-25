@@ -15,6 +15,7 @@
 
 <div class="product-explanation">
   <div class="product-explanation_header">Here you will find more information on our line of advanced, innovative and revolutionary cutting tools.</div>
+  <div class="break-line"></div>
   <div class="row product-explanation_row">
     <div class="product-explanation_summary small-12 small-centered large-9 large-centered columns">
       Bic Tool has applied the Gekkou patented tip (more info and screen shots of patents in a separate page) to a 5% M35 Super Cobalt High Speed Steel drill bit with a 188 degree tip and created a cutting tool like no other on the market.
@@ -37,39 +38,40 @@
   </div>
 </div>
 
-<section class="gekkou-benefits">
+<div class="gekkou-benefits">
   <%= inline_svg("drill_icon.svg", class: "gekkou-drill-icon") %>
   
   <div class="gekkou-benefits-header">
     Benefits of Gekkou cutting tools:
   </div>
-  
-  <div class="row more-product-info">
-    <div class="more-product-info_text small-12 small-centered large-9 large-centered columns">
-      Longer bit life - greater Return On Investment. Gekkou drill bits can be resharpened up to 4 times and cut as many as 150 holes in 1/4" thick 304 Stainless Steel material during the life of a single drill bit.
+  <div class="product-explanation_more">
+    <div class="row product-explanation_row">
+      <div class="product-explanation_summary small-12 small-centered large-9 large-centered columns">
+        Longer bit life - greater Return On Investment. Gekkou drill bits can be resharpened up to 4 times and cut as many as 150 holes in 1/4" thick 304 Stainless Steel material during the life of a single drill bit.
+      </div>
+    </div>
+    <div class="row product-explanation_row">
+      <div class="product-explanation_summary small-12 small-centered large-9 large-centered columns">
+        Swarf produced during drilling emerges in long spirals as opposed to small chips usually seen when drilling with hand held drills (many of our clients recycle the "Gekkou" swarf). This benefit has been utilized by our clients in the medical and food industries where minimal contamination is ideal.
+      </div>
+    </div>
+    <div class="row product-explanation_row">
+      <div class="product-explanation_summary small-12 small-centered large-9 large-centered columns">
+        Very little heat is transferred to material being drilled which virtually eliminates discoloration and warping and leaves a clean smooth hole with very little burring on the back end.
+      </div>
+    </div>
+    <div class="row product-explanation_row">
+      <div class="product-explanation_summary small-12 small-centered large-9 large-centered columns">
+        Gekkou drill bits are equally ideal for construction job site setting and for the industrial and manufacturing atmosphere.
+      </div>
+    </div>
+    <div class="row product-explanation_row">
+      <div class="product-explanation_summary small-12 small-centered large-9 large-centered columns">
+        Gekkou patented tip technology has been successfully applied to spot weld cutting bits and a number of other cutting tools due to be introduced to the global market in the near future.
+      </div>
     </div>
   </div>
-  <div class="row more-product-info">
-    <div class="more-product-info_text small-12 small-centered large-9 large-centered columns">
-      Swarf produced during drilling emerges in long spirals as opposed to small chips usually seen when drilling with hand held drills (many of our clients recycle the "Gekkou" swarf). This benefit has been utilized by our clients in the medical and food industries where minimal contamination is ideal.
-    </div>
-  </div>
-  <div class="row more-product-info">
-    <div class="more-product-info_text small-12 small-centered large-9 large-centered columns">
-      Very little heat is transferred to material being drilled which virtually eliminates discoloration and warping and leaves a clean smooth hole with very little burring on the back end.
-    </div>
-  </div>
-  <div class="row more-product-info">
-    <div class="more-product-info_text small-12 small-centered large-9 large-centered columns">
-      Gekkou drill bits are equally ideal for construction job site setting and for the industrial and manufacturing atmosphere.
-    </div>
-  </div>
-  <div class="row more-product-info">
-    <div class="more-product-info_text small-12 small-centered large-9 large-centered columns">
-      Gekkou patented tip technology has been successfully applied to spot weld cutting bits and a number of other cutting tools due to be introduced to the global market in the near future.
-    </div>
-  </div>
-</section>
+</div>
 
 <section class="footer-section-container">
   <div class="row footer-row">
@@ -83,11 +85,13 @@
       </div>
     </div>
     <div class="footer-section large-4 columns">
-      <div class="footer-header">Contact Us</div>
+      <div class="footer-header">Contact Distributor</div>
       <div class="footer-items">
         <ul class="footer-items-container">
-          <li class="footer-li-items"><%= mail_to "vitaliy@bictool.com", image_tag("mail_icon.png", class: "footer-icons") %></li>
-          <li class="footer-li-items"><%= mail_to "vitaliy@bictool.com", "vitaliy@bictool.com", class: "footer-links" %></li>
+          <li class="footer-li-items footer-li-items_header">United States</li>
+          <li class="footer-li-items_dist"><%= mail_to "vitaliy@bictool.com", "vitaliy@bictool.com", class: "footer-links" %></li>
+          <li class="footer-li-items footer-li-items_header">Global</li>
+          <li class="footer-li-items_dist"><%= mail_to "watanabe@bictool.com", "watanabe@bictool.com", class: "footer-links" %></li>
         </ul>
       </div>
     </div>

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root "welcome#index"
   get 'distributors' => 'distributors#index'
   get "openpdf" => "welcome#open_pdf"
+  get 'gallery' => "galleries#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
