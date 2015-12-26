@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+
   </head>
 
   <body>
@@ -23,11 +24,12 @@
       <section class="top-bar-section">
         <ul class="right">
           <li class="nav-dropdown-links"><%= link_to "Distributors", distributors_path, class: "nav-bar-links" %></li>
-          <li class="nav-dropdown-links"><a class="nav-bar-links" href="#">Gallery</a></li>
+          <li class="nav-dropdown-links"><%= link_to "Gallery", gallery_path, class: "nav-bar-links" %></li>
         </ul>
       </section>
     </nav>
     <%= yield %>
-
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   </body>
 </html>
