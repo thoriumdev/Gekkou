@@ -126,7 +126,7 @@ $white       : #FFFFFF;
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+// $body-font-family: $proxima-light;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -447,7 +447,7 @@ $white       : #FFFFFF;
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-$button-bg-color: #353940;
+$button-bg-color: #52616B;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
@@ -1386,7 +1386,7 @@ $topbar-dropdown-bg: $white;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: #FF5335;
+$topbar-link-color: #52616B;
 $topbar-link-color-hover: rgba(255,83,53, 0.8);
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
@@ -1418,7 +1418,7 @@ $topbar-link-bg-hover: $white;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
 // $topbar-menu-link-color: $white;
-$topbar-menu-icon-color: #FF5335;
+$topbar-menu-icon-color: #52616B;
 // $topbar-menu-link-color-toggled: $jumbo;
 // $topbar-menu-icon-color-toggled: $jumbo;
 

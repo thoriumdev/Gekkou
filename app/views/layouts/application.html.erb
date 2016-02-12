@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Gekkou" %></title>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -15,7 +15,7 @@
     <nav class="top-bar nav-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <%= link_to image_tag("logo.png", class: "logo"), root_path %>
+          <%= link_to image_tag("logo.png", class: "logo"), "http://www.bictool.co/" %>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
