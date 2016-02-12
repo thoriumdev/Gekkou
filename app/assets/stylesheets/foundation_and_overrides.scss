@@ -126,7 +126,7 @@ $white       : #FFFFFF;
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-// $body-font-family: $proxima-light;
+// $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -1387,7 +1387,7 @@ $topbar-dropdown-bg: $white;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: #52616B;
-$topbar-link-color-hover: rgba(255,83,53, 0.8);
+$topbar-link-color-hover: #52616B;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;

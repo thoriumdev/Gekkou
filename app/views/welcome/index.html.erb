@@ -4,13 +4,13 @@
 </div>
 
 <div class="product-explanation">
-  <div class="product-explanation_header">Here you will find more information on our line of advanced, innovative and revolutionary cutting tools.</div>
+  <div class="product-explanation_header">Here you will find more information on our line of advanced, innovative and revolutionary cutting tools. Subscribe to our email list below.</div>
   <div class="email-sub small-12 small-centered large-10 large-centered columns">
     <div class="row collapse">
-      <div class="small-8 large-offset-4 large-6 columns">
+      <div class="small-8 large-offset-2 large-6 columns">
         <input class="email-input" type="text" autofocus=false placeholder="Enter email to hear from us...">
       </div>
-      <div class="small-4 large-2 columns">
+      <div class="small-4 large-2 columns end">
         <a href="#" class="button postfix">Subscribe</a>
       </div>
     </div>
@@ -79,28 +79,18 @@
       <div class="footer-header">Social Media</div>
       <div class="footer-items">
         <ul class="footer-items-container">
-          <li class="footer-li-items"><%= link_to image_tag("facebook_icon.png", class: "facebook-icons footer-icons"), "https://www.facebook.com/GekkouUSA" %><a class="footer-links" href="https://www.facebook.com/GekkouUSA">GekkouUSA</a></li>
-          <li class="footer-li-items"><%= link_to image_tag("facebook_icon.png", class: "facebook-icons footer-icons"), "https://www.facebook.com/Bic-Tool-634639836657945/" %><a class="footer-links" href="https://www.facebook.com/Bic-Tool-634639836657945/">BicToolCo</a></li>
+          <li class="footer-li-items"><%= link_to image_tag("facebook_icon.png", class: "facebook-icons footer-icons"), "https://www.facebook.com/GekkouUSA" %><a class="footer-links" href="https://www.facebook.com/GekkouUSA">Gekkou USA</a></li>
+          <li class="footer-li-items"><%= link_to image_tag("facebook_icon.png", class: "facebook-icons footer-icons"), "https://www.facebook.com/Bic-Tool-634639836657945/" %><a class="footer-links" href="https://www.facebook.com/Bic-Tool-634639836657945/">Bic Tool Co.</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-section large-4 columns">
-      <div class="footer-header">Contact Distributor</div>
+      <div class="footer-header">United States</div>
       <div class="footer-items">
         <ul class="footer-items-container">
-          <li class="footer-li-items footer-li-items_header">United States</li>
           <li class="footer-li-items_dist"><%= mail_to "vitaliy@bictool.com", "vitaliy@bictool.com", class: "footer-links" %></li>
           <li class="footer-li-items footer-li-items_header">Global</li>
           <li class="footer-li-items_dist"><%= mail_to "watanabe@bictool.com", "watanabe@bictool.com", class: "footer-links" %></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-section large-4 columns">
-      <div class="footer-header">More Info</div>
-      <div class="footer-items">
-        <ul class="footer-items-container">
-          <li class="footer-li-items"><%= link_to image_tag("documents_icon.png", class: "footer-icons"), { controller: "welcome", action: "open_pdf" }, target: "_blank" %></li>
-          <li class="footer-li-items"><%= link_to "Customer Comments", { controller: "welcome", action: "open_pdf" }, target: "_blank", class: "footer-links" %></li>
         </ul>
       </div>
     </div>
